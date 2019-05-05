@@ -1,12 +1,12 @@
 # Glossary Maker
-This combination of a Python and Bash script is intended to create a Glossary for a existing PDF.
-Therefore one has to provide a word list with the expressions wanted.
+This combination of a Python and Bash script is intended to create a glossary for an existing PDF.
+Therefor one has to provide a word list with the expressions wanted.
 The script then generates a text file with the corresponding page numbers within the PDF document.
 
 ## Usage
 `python <document.pdf> <wordlist.csv>`
 
-The pattern match is **case insensitive**.
+- The pattern match is **case insensitive**
 
 ### Example word list
 ```
