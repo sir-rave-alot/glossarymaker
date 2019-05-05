@@ -1,14 +1,19 @@
+import sys
 import subprocess
 from subprocess import check_output
 import csv
 import re 
 
-document = "script.pdf"
-wordlist = "dwordlist.csv"
-outfile = "gloss" + re.sub('\.csv$', '', wordlist) + ".txt"
+print ('Argument List:', str(sys.argv))
+
+document = sys.argv[1]
+wordlist = sys.argv[2]
+
+outfile = "gloss-" + re.sub('\.csv$', '', wordlist) + ".txt"
 delim = '..'
 
 print "Generating glossary!"
+print "Store in " + outfile
 
 words = csv.reader(open(wordlist))
 
